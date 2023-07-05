@@ -71,7 +71,7 @@ const Header = () => {
             <header>
                 <nav>
                     <NavLink to="/" style={{ zIndex: 1000 }}>
-                        <h1>JP MERN</h1>
+                        <h1>KP MERN</h1>
                     </NavLink>
                     <span
                         onClick={() => setTog(!tog)}
