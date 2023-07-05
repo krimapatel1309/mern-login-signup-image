@@ -72,7 +72,7 @@ const Register = () => {
             // console.log(formData.entries());
 
             axios
-                .post("https://mern-signin-signout-backend.onrender.com/register", formData)
+                .post("https://mern-login-signup-image-backend.onrender.com/register", formData)
                 .then((res) => {
                     console.log(res);
                     toast.success("Registration Successfuly done 😃!", {
