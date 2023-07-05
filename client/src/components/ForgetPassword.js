@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     const [password, setPassword] = useState("");
 
     const userValid = async () => {
-        const res = await fetch(`https://mern-signin-signout-backend.onrender.com/forgotpassword/${id}/${token}`, {
+        const res = await fetch(`https://mern-login-signup-image-backend.onrender.com/forgotpassword/${id}/${token}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const ForgotPassword = () => {
         } else if (password.length < 6) {
             toast.error("Password: min 6 char require!");
         } else {
-            const res = await fetch(`https://mern-signin-signout-backend.onrender.com/${id}/${token}`, {
+            const res = await fetch(`https://mern-login-signup-image-backend.onrender.com/${id}/${token}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
